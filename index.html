@@ -1,0 +1,169 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE-edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="style.css" rel="stylesheet" type="text/css">
+      <!--using FontAwesome---------------->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+<script type="text/javascript"></script>
+ <title> My Portfolio</title>
+ <!--style----->
+ <style>
+.body{
+	margin:0px;
+	padding:0px;
+	background-color:#161616;	
+}
+.ul{
+	list-style:none;
+}
+.a{
+	text-decoration:none;
+}
+#main{
+	padding:30px 50px;
+	position:relative;
+	width:100%;
+	height: 100vh;
+	box-sizing: border-box;
+	background-size: 1330px;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-image: url("");
+	background-color: #edf1fd;
+}
+.nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: calibri;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color:#F4F7FF;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.05); 
+	z-index: 1;
+}
+ 
+.menu{
+	display: flex;
+}
+.menu li a{
+	padding: 10px 15px;
+	color:#6c707c;
+	font-size: 12px;
+	
+}
+.lang{
+	color:#292929;
+}
+.logo{
+	font-size: 25px;
+	font-weight: bold;
+	color:#292929;
+	font-family:Poppins;
+}
+.toggle{
+	display: none;
+}
+.active a,
+.menu li a:hover{
+	background-color:#292929;
+	color:#FFF!important;
+	font-weight: bold;
+	transition: all ease 0.4s;
+}
+.img{
+	width:100%;
+	height: 50vh;
+	box-sizing: border-box;
+	display: flex;
+	align-items: right;
+	justify-content: space-between;
+	padding: 0px 5% 50px 5%;
+	position: left;
+}
+.class{
+	padding-left: 900px;
+	padding-bottom:500px;
+	
+}
+ </style>
+ </head>
+ <body>
+    <section id="main">
+        <!--navigation-------------------------------->
+        <nav>
+        <!--logo--->
+        <a href="#" class="logo"> MASITHEMBE </a>
+        <!--menu--------->
+        <div class="toggle"></div>
+        <ul class="menu">
+        <li class="active"><a href="main" >Home</a></li>	
+        <li><a href="about.html">About</a></li>	
+		<li><a href="projects.html">Projects</a></li>
+		<li><a href="skills.html">skills</a></li>
+		<li><a href="talents.html">Talents</a></li>		
+        <li><a href="Hobbies.html">Hobbies</a></li>		
+		<li><a href="contact.html">Contact</a></li>	
+        </ul>
+        </nav>
+     </section> 
+      <!--name--------------------------->
+	<div class="name">
+        <!--hello------->
+        <p><h3>Hello</h3></p>
+        <!--name--->
+        <h1>I'm <font color="#17d1ac"><a href="about.html">Masithembe</a></font> Gladile</h1>
+        <!--details--------------->
+        <p class="details"><h3>I'm a Front-end Developer who is passinate about coding but not limited to, because there's alot i can do be it  Mobile Development,
+			Website Development, Game Development etc ... 
+			So being part of a broader network in IT or Coding industry means alot to 
+			me and my family, am fortunate enough to being amongst other coders/programmers..
+		</h3></p>
+
+	    
+	</div>
+		
+		
+			<img src="image5.jpg" width="200px" height="200px"
+			 alt="image2.jpg" title="image2.jpg"
+			 style="width:50%;
+			 height: 80vh;
+			 box-sizing: border-box;display: flex;
+			 align-items: left 100px;
+			 justify-content: space-between;
+			 ;padding: 0px 5% 50px 5%;
+	         position: left;"
+        
+        <div class="black-line" ></div>
+        <!--social---------------->
+        <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>	
+		<a href="#"><i class="fab fa-twitter"></i></a>
+		<a href="#"><i class="fab fa-whatsapp"></i></a>	
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <script>
+        /*Responsive Navigation*/
+        $(document).ready(function(){
+       $('.toggle').click(function(){
+           $('.toggle').toggleClass('active')
+           
+           $('nav ul').toggleClass('active-menu')
+          
+           
+       })
+   });
+</script>
+ </body>
+ </html>
