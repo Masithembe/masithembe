@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+		body{
+	margin:0px;
+	padding:0px;
+	background-color:#161616;	
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+#main{
+	padding:30px 50px;
+	position:relative;
+	width:100%;
+	/*height: 100vh;
+	box-sizing: border-box;
+	background-size: 1330px;
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-image: url("../images/bg.png");*/
+	background-color: #edf1fd;
+}
+nav{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: calibri;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	box-sizing: border-box;
+	padding: 10px 50px;
+	background-color:#F4F7FF;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.05); 
+	z-index: 1;
+}
+ 
+.menu{
+	display: flex;
+}
+.menu li a{
+	padding: 10px 15px;
+	color:#6c707c;
+	font-size: 12px;
+	
+}
+.lang{
+	color:#292929;
+}
+.logo{
+	font-size: 25px;
+	font-weight: bold;
+	color:#292929;
+	font-family:Poppins;
+}
+.toggle{
+	display: none;
+}
+.active a,
+.menu li a:hover{
+	background-color:#292929;
+	color:#FFF!important;
+	font-weight: bold;
+	transition: all ease 0.4s;
+}
+#about{
+	width:100%;
+	height: 100vh;
+	background-color:#161616;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 50px 5% 0px 5%;
+	position: relative;
+}
+.about-text{
+	font-family: calibri;
+	width: 50%;
+}
+.about-text h1{
+	font-size: 5rem;
+	color:#17d1ac;
+}
+.about-text h2{
+	font-size: 3rem;
+	color:#FFFFFF;
+	font-weight: 400;
+}
+.about-text h1,h2{
+	margin: 0px;
+	padding: 0px;
+}
+.about-text p{
+	font-size: 1.2rem;
+	color:rgba(255,255,255,0.90);
+	
+}
+.about-text button{
+	width: 180px;
+	height: 40px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	background-color:#17d1ac;
+}
+.about-text button:hover{
+	background-color: #FFFFFF;
+	transition: all ease 0.3s;
+}
+
+    </style>
+</head>
+<body>
+	<section id="main">
+        <!--navigation-------------------------------->
+        <nav>
+        <!--logo--->
+        <a href="#" class="logo"> MASITHEMBE </a>
+        <!--menu--------->
+        <div class="toggle"></div>
+        <ul class="menu">
+        <li class="active"><a href="index.html">Home</a></li>	
+		<li><a href="about.html">About</a></li>	
+		<li><a href="projects.html">Projects</a></li>
+		<li><a href="skills.html">skills</a></li>
+		<li><a href="talents.html">Talents</a></li>		
+        <li><a href="Hobbies.html">Hobbies</a></li>		
+		<li><a href="contact.html">Contact</a></li>	
+        </ul>
+        </nav>
+     </section>
+<!--about----------------------->
+<section id="about">
+	<!--text---------------------->
+	<div class="about-text">
+	<h1>About Me</h1>
+	<h2>I'm a Front-End Developer</h2>
+	<p>I'm Masithembe Gladile. I'm born and bred in site B khayelitsha, i attended my primary school in Ikhusi Primary School and i finished my high school
+		in Masiyile Sinior Secondary School. I grew up loving computers but didn't know that i can make a career out of computer, but as time goes by i caught
+		 up with Codetelligent witch showed me the way of creating a career using a computer/laptop so am very much dedicated in pursuing that career and working
+		  very hard towards achieving my goals.  </p>
+		  <br><br><br><br>
+	</div>
+	<!--about-model----------------->
+	<div class="about-model">
+	<img alt="model" src="image3.jpg" height="500" width="500"/>	
+	</div>
+	</section>
+	<script>
+        /*Responsive Navigation*/
+        $(document).ready(function(){
+       $('.toggle').click(function(){
+           $('.toggle').toggleClass('active')
+           
+           $('nav ul').toggleClass('active-menu')
+          
+           
+       })
+   });
+</script>
+  </body>
+</html>
